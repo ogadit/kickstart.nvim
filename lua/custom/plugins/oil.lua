@@ -1,0 +1,7 @@
+vim.pack.add({
+    'https://github.com/stevearc/oil.nvim',
+})
+
+require('oil').setup({})
+
+vim.keymap.set('n', '-', ':Oil<CR>', { desc = "Open Oil Explorer", silent = true})
